@@ -4,7 +4,7 @@ Hello there! This repo is all about competitive coding. It contains solutions to
 
 ## To run any code on Linux or MacOS
 
-All the codes are in C++. Make sure that you have g++ installed.
+All the codes are in C++. Make sure that you have gcc installed.
 
 ```bash
 source run_cpp.sh

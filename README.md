@@ -1,6 +1,6 @@
 # About
 
-Hello there! This repo is all about dynamic programming. It contains solutions to some of the dynamic programming problems from various platforms.
+Hello there! This repo is all about competitive coding. It contains solutions to some of the programming problems from various platforms and contests!<br>You can find the URL of the question on the top of each code.
 
 ## To run any code on Linux or MacOS
 

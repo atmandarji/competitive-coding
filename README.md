@@ -15,5 +15,8 @@ run ./spoj/COUPON.cpp
 ## Contributing
 Pull requests and better solutions are welcome! Happy coding!
 
+## Note
+- Solutions for leetcode doesn't have `main()` function. So to test them, write `main()` yourself!
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

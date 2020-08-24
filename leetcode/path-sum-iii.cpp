@@ -12,17 +12,17 @@
  */
 class Solution {
 public:
-    int pathSum(TreeNode* root, int sum, bool con=false) {
+    unordered_map<int,int> freq;
+    int pathSum(TreeNode* root, int sum, int sum_till_now=0) {
+        if(!freq[0]) freq[0]=1;
         if(!root) return 0;
         int ans=0;
-        if(root->val==sum)
-            ans++;
-        if(!con){
-            ans += pathSum(root->left, sum);
-            ans += pathSum(root->right, sum);
-        }
-        ans += pathSum(root->left, sum-root->val, true);
-        ans += pathSum(root->right, sum-root->val, true);
+        if(freq.find(sum_till_now+root->val-sum) != freq.end())
+            ans+=freq[sum_till_now+root->val-sum];
+        freq[sum_till_now+root->val]++;
+        ans += pathSum(root->left, sum, sum_till_now+root->val);
+        ans += pathSum(root->right, sum, sum_till_now+root->val);
+        freq[sum_till_now+root->val]--;
         return ans;
     }
 };

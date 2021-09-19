@@ -17,5 +17,6 @@ function run(){
 	   ./exe $args
 	fi
 }
+# Making alias
 alias run="run"
 
